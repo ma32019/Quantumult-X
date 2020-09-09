@@ -496,7 +496,7 @@ https:\/\/ug\.snssdk\.com\/ad\/impression\/toutiao\/ url reject-dict
 # > 中信银行
 ^https?:\/\/m\.creditcard\.ecitic\.com\/citiccard\/mbk\/.+\/appStartAdv url reject-200
 # > 中国工商银行
-^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ urlreject-200
+^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ url reject-200
 # > 中国招商银行
 ^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/preCacheAdvertise\.json url reject-200
 ^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/getAdvertisement\.json url reject-200
