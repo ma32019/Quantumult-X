@@ -31,7 +31,8 @@ USER-AGENT,Siri*,DIRECT
 USER-AGENT,*siri*,DIRECT
 IP-CIDR,17.0.0.0/8,苹果服务
 # >> TestFlight
-DOMAIN,testflight.apple.com,DIRECT
+DOMAIN,beta.apple.com,PROXY
+DOMAIN,testflight.apple.com,PROXY
 # >屏蔽系统升级更新
 DOMAIN,xp.apple.com,REJECT
 DOMAIN,ocsp.apple.com,REJECT

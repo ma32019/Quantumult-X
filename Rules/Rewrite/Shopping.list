@@ -1,16 +1,12 @@
-hostname= api.m.jd.com,img10.360buyimg.com,jr.jd.com,app-api.smzdm.com,img1.360buyimg.com,*.meituan.net,img.suning.cn,app-api.smzdm.com,*.jr.jd.com,thor.weidian.com,api.m.jd.com,pic1.zhuanstatic.com,cube.elemecdn.com
-# > JD
-;^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=(start|queryMaterialAdverts) url reject-200
-^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ url reject-200
-^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ url reject-200
-^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo url reject-200
-^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture url reject-200
-^https?:\/\/.+\/jfs.+\w+\=1125&\w+\=2080 url reject-200
-^https?:\/\/.+\/mcmktadmin.+\.jpg$ url reject-200
-^https?:\/\/img1\.360buyimg\.com\/pop\/jfs.+\.jpg url reject-200
-# > 京东金融
-^https:\/\/img10\.360buyimg\.com\/mcmktresadmin\/.+\.jpg url reject-200
+hostname= img*.360buyimg.com,jr.jd.com,app-api.smzdm.com,img1.360buyimg.com,*.meituan.net,img.suning.cn,app-api.smzdm.com,*.jr.jd.com,thor.weidian.com,api.m.jd.com,pic1.zhuanstatic.com,cube.elemecdn.com,api.yangkeduo.com
 
+# > JD - api.m.jd.com,ms.jr.jd.com,img*.360buyimg.com
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start url reject-200
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts url reject-200
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ url reject-200
+# > 京东金融
+^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ url reject-200
+^https:\/\/img10\.360buyimg\.com\/mcmktresadmin\/.+\.jpg url reject-200
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture url reject-200
 
 # > 美团
@@ -20,8 +16,9 @@ hostname= api.m.jd.com,img10.360buyimg.com,jr.jd.com,app-api.smzdm.com,img1.360b
 ^https?:\/\/s3plus\.meituan\.net\/.+\/linglong\/.+\.(gif|jpg|mp4) url reject-200
 # > 美团外卖
 ^https?:\/\/p1\.meituan\.net\/wmbanner\/\w++\.jpg url reject
-# > Suning
+# > 苏宁
 ^https?:\/\/image\.suning\.cn\/uimg\/ma\/ad\/ url reject-200
+^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo url reject-200
 # > 什么值得买
 ^https?:\/\/app\-api\.smzdm\.com\/util\/loading\?.+&sign url reject-200
 # > 微店
@@ -30,3 +27,9 @@ hostname= api.m.jd.com,img10.360buyimg.com,jr.jd.com,app-api.smzdm.com,img1.360b
 ^https?:\/\/pic1\.zhuanstatic\.com\/\w+\/n_\w++\.jpg url reject-200
 # > 饿了么
 ^https?:\/\/cube\.elemecdn\.com\/.+\.jpeg\?.+w_\d{4},h_\d{4} url reject-200
+^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{3},h_\d{4}\/format,webp\/ url reject-200
+^https?:\/\/cube\.elemecdn\.com\/[\w\/]+\.jpeg\?x-oss-process=image\/resize,m_fill,w_6\d{2},h_8\d{2}\/format,webp\/ url reject-200
+
+# > 拼多多 - api.yangkeduo.com
+^https?:\/\/api\.yangkeduo\.com\/api\/cappuccino\/splash url reject-200
+^https?:\/\/t00img\.yangkeduo\.com\/goods\/[\d-]+\/[A-Za-z0-9]+\.jpeg\?imageView2\/format\/webp$ url reject-200
