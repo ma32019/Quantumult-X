@@ -167,7 +167,7 @@ DOMAIN-SUFFIX,qq.com,DIRECT
 DOMAIN-SUFFIX,tencent.com,DIRECT
 DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
 # >> TestFlight
-DOMAIN,testflight.apple.com,DIRECT
+#DOMAIN,testflight.apple.com,DIRECT
 # > YYeTs
 USER-AGENT,YYeTs*,DIRECT
 DOMAIN-SUFFIX,jstucdn.com,DIRECT
