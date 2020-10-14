@@ -1,4 +1,4 @@
-hostname= img*.360buyimg.com,jr.jd.com,app-api.smzdm.com,img1.360buyimg.com,*.meituan.net,img.suning.cn,app-api.smzdm.com,*.jr.jd.com,thor.weidian.com,api.m.jd.com,pic1.zhuanstatic.com,cube.elemecdn.com,api.yangkeduo.com
+hostname= img*.360buyimg.com,jr.jd.com,app-api.smzdm.com,*.meituan.net,img.suning.cn,*.jr.jd.com,thor.weidian.com,api.m.jd.com,pic1.zhuanstatic.com,cube.elemecdn.com,api.yangkeduo.com
 
 # > JD - api.m.jd.com,ms.jr.jd.com,img*.360buyimg.com
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start url reject-200
