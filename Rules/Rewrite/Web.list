@@ -167,7 +167,7 @@ hostname = api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,mp.weixin.qq.com,*.zhihu.
 # > CSDN - gw.csdn.net
 ^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement url reject
 # 彩云天气
-https?:\/\/cdn-1rtb\.caiyunapp\.com/creative/ reject-200
+https?:\/\/cdn-1rtb\.caiyunapp\.com/creative/ url reject-200
 
 # D
 # > 斗鱼
