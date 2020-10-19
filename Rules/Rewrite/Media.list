@@ -67,6 +67,7 @@ http:\/\/imgwx\.3-ye\.cn\/img\/ios\/htb\/haitunbaobiantione|qiandaoimage|headbgV
 ^https?:\/\/vv\.video\.qq\.com\/getvmind\? url reject-200
 ^https?:\/\/.+\.mp4.+&sdtfrom=v3004 url reject-dict
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+\.tc\.qq\.com\/.+p201\.1\.mp4\? url reject-img
+^https://vv\.video\.qq\.com/checktime url reject-img
 
 # >> 网易云音乐
 # > NetEase CloudMusic - interface*.music.163.com,59.111.181.*
@@ -98,6 +99,8 @@ http:\/\/imgwx\.3-ye\.cn\/img\/ios\/htb\/haitunbaobiantione|qiandaoimage|headbgV
 ^(http|https):\/\/[\w-]+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject-200
 ^(http|https):\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/img\/ad\.union\.api\/ url reject-200
 ^(http|https):\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ url reject-200
+^https:\/\/lf-hl\.snssdk\.com\/api\/ad\/splash\/ url reject-dict
+
 
 # AbeamTV
 ^(http|https):\/\/api\.abema\.io\/v\d\/ip\/check url reject-200
